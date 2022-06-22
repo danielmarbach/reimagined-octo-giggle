@@ -40,10 +40,25 @@ async function run(): Promise<void> {
       // https://github.com/pulumi/examples/blob/master/azure-ts-call-azure-sdk/index.ts
       // or use the classic stuff
 
-      const exampleShareFile = new classicstorage.ShareFile("licenseFileShare", {
-        storageShareId: fileShare.id,
-        source: "/home/danielmarbach/Projects/reimagined-octo-giggle/LICENSE",
-      });
+      // const exampleAccount = new classicstorage.Account("exampleAccount", {
+      //   resourceGroupName: resourceGroup,
+      //   accountTier: "Standard",
+      //   accountReplicationType: "LRS",
+      // });
+      // const exampleShare = new classicstorage.Share("exampleShare", {
+      //   storageAccountName: exampleAccount.name,
+      //   quota: 50,
+      // });
+      // const exampleShareFile = new classicstorage.ShareFile("exampleShareFile", {
+      //   storageShareId: exampleShare.id,
+      //   source: "/home/danielmarbach/Projects/reimagined-octo-giggle/LICENSE",
+      // });
+
+
+      // const exampleShareFile = new classicstorage.ShareFile("licenseFileShare", {
+      //   storageShareId: fileShare.id,
+      //   source: "/home/danielmarbach/Projects/reimagined-octo-giggle/LICENSE",
+      // });
 
       const containerGroup = new containerinstance.ContainerGroup(
         'containerGroup',
