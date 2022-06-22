@@ -10,8 +10,9 @@
     "format-check": "prettier --check '**/*.ts'",
     "lint": "eslint src/**/*.ts",
     "package": "ncc build --source-map --license licenses.txt",
-    "test": "jest",
-    "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
+    "test": "jest --silent=false",
+    "all": "npm run build && npm run format && npm run lint && npm run package && npm test",
+    "start": "tsc && node lib/main.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.6.0",
+    "@pulumi/azure": "^5.10.0",
     "@pulumi/azure-native": "^1.65.0",
     "@pulumi/pulumi": "^3.34.1"
   },
