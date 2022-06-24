@@ -28,7 +28,7 @@
   "dependencies": {
     "@actions/core": "^1.9.0",
     "@pulumi/azure": "^5.10.0",
-    "@pulumi/azure-native": "^1.65.0",
+    "@pulumi/azure-native": "^1.66.0",
     "@pulumi/pulumi": "^3.35.1"
   },
   "devDependencies": {
