@@ -29,7 +29,7 @@
     "@actions/core": "^1.6.0",
     "@pulumi/azure": "^5.10.0",
     "@pulumi/azure-native": "^1.65.0",
-    "@pulumi/pulumi": "^3.34.1"
+    "@pulumi/pulumi": "^3.35.1"
   },
   "devDependencies": {
     "@types/node": "^16.10.5",
